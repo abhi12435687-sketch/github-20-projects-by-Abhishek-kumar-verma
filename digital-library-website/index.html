@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduLibrary - Digital Library</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>📚 EduLibrary</h1>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#library">Library</a>
+            <a href="#about">About</a>
+        </nav>
+    </header>
+
+    <section class="hero" id="home">
+        <h2>Your Knowledge Hub</h2>
+        <p>Explore books, notes and educational resources in one place.</p>
+
+        <a href="#library" class="hero-btn">Explore Library</a>
+    </section>
+
+    <main>
+
+        <section id="library">
+
+            <h2>Explore Study Materials</h2>
+
+            <div class="filters">
+
+                <input
+                    type="text"
+                    id="search"
+                    placeholder="Search resources by title..."
+                    oninput="displayResources()"
+                >
+
+                <select id="subject" onchange="displayResources()">
+                    <option value="All">All Subjects</option>
+                    <option value="Programming">Programming</option>
+                    <option value="Mathematics">Mathematics</option>
+                    <option value="Science">Science</option>
+                    <option value="AI & ML">AI & ML</option>
+                </select>
+
+            </div>
+
+            <div id="resource-container" class="resource-container">
+            </div>
+
+        </section>
+
+        <section id="about">
+            <h2>About EduLibrary</h2>
+
+            <p>
+                EduLibrary is a student-friendly digital library
+                designed to make educational resources easily
+                accessible. Students can explore study materials
+                from different subjects in one place.
+            </p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2026 EduLibrary. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

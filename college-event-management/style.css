@@ -1,0 +1,191 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #f4f6fa;
+    color: #333;
+}
+
+header {
+    background: #26345c;
+    color: white;
+    padding: 18px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+.hero {
+    background: linear-gradient(120deg, #26345c, #5369a5);
+    color: white;
+    text-align: center;
+    padding: 75px 15px;
+}
+
+.hero h2 {
+    font-size: 34px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    margin-bottom: 25px;
+}
+
+.hero-btn {
+    display: inline-block;
+    background: #f4a261;
+    color: #222;
+    text-decoration: none;
+    padding: 12px 22px;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+main {
+    width: 85%;
+    margin: 40px auto;
+}
+
+section h2 {
+    margin-bottom: 25px;
+    color: #26345c;
+}
+
+.event-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 25px;
+}
+
+.event-card {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 3px 12px #00000012;
+}
+
+.event-date {
+    color: #e76f51;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.event-card h3 {
+    margin-bottom: 10px;
+}
+
+.event-card p {
+    line-height: 1.6;
+    margin-bottom: 12px;
+}
+
+.venue {
+    color: #666;
+    font-size: 14px;
+}
+
+button {
+    background: #26345c;
+    color: white;
+    border: none;
+    padding: 11px 18px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+button:hover {
+    background: #e76f51;
+}
+
+#register {
+    margin-top: 55px;
+}
+
+form {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 600px;
+    box-shadow: 0 3px 12px #00000012;
+}
+
+form label {
+    display: block;
+    margin: 15px 0 7px;
+    font-weight: bold;
+}
+
+form input,
+form select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+form button {
+    width: 100%;
+    margin-top: 22px;
+    padding: 13px;
+}
+
+#confirmation {
+    max-width: 600px;
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 8px;
+    display: none;
+    background: #d8f3dc;
+    color: #1b4332;
+    line-height: 1.6;
+}
+
+footer {
+    background: #26345c;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 55px;
+}
+
+@media (max-width: 600px) {
+
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    header nav a {
+        margin: 0 8px;
+    }
+
+    main {
+        width: 92%;
+    }
+
+    .hero h2 {
+        font-size: 26px;
+    }
+
+    form {
+        padding: 20px;
+    }
+}

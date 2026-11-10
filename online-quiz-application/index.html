@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Quiz Application</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Online Quiz Application</h1>
+        <p>Test Your Knowledge!</p>
+    </header>
+
+    <div class="quiz-container" id="quiz">
+
+        <div class="quiz-info">
+            <span id="question-number">Question 1 of 5</span>
+            <span id="score">Score: 0</span>
+        </div>
+
+        <div class="progress">
+            <div id="progress-bar"></div>
+        </div>
+
+        <h2 id="question">Question will appear here</h2>
+
+        <div id="options">
+            <!-- Options will be added using JavaScript -->
+        </div>
+
+        <p id="feedback"></p>
+
+        <div class="buttons">
+            <button id="prev-btn" onclick="previousQuestion()">Previous</button>
+            <button id="next-btn" onclick="nextQuestion()">Next</button>
+        </div>
+
+    </div>
+
+    <div class="result-container" id="result-container">
+        <h2>Quiz Completed!</h2>
+        <h3 id="final-score"></h3>
+        <p id="result-message"></p>
+        <button onclick="restartQuiz()">Restart Quiz</button>
+    </div>
+
+    <footer>
+        <p>© 2026 Online Quiz Application</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

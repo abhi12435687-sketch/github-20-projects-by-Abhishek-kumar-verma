@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Project Submission Portal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Student Project Portal</h1>
+        <button onclick="logout()" id="logoutBtn" style="display:none">
+            Logout
+        </button>
+    </header>
+
+    <!-- Login Section -->
+    <div id="loginSection" class="login">
+        <h2>Login</h2>
+
+        <input type="text" id="username" placeholder="Enter Username">
+        <input type="password" id="password" placeholder="Enter Password">
+
+        <select id="role">
+            <option value="student">Student</option>
+            <option value="faculty">Faculty</option>
+        </select>
+
+        <button onclick="login()">Login</button>
+    </div>
+
+    <!-- Student Dashboard -->
+    <div id="studentDashboard" class="dashboard">
+        <h2>Student Dashboard</h2>
+
+        <h3>Available Assignments</h3>
+
+        <div id="assignments"></div>
+
+        <h3>My Submissions</h3>
+        <div id="mySubmissions"></div>
+    </div>
+
+    <!-- Faculty Dashboard -->
+    <div id="facultyDashboard" class="dashboard">
+        <h2>Faculty Dashboard</h2>
+
+        <h3>Student Submissions</h3>
+        <div id="facultySubmissions"></div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

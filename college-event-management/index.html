@@ -1,0 +1,146 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campus Events - College Event Management</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>🎓 Campus Events</h1>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#events">Events</a>
+            <a href="#register">Register</a>
+        </nav>
+    </header>
+
+    <section class="hero" id="home">
+        <h2>Discover. Participate. Celebrate.</h2>
+        <p>Explore exciting events happening at your college!</p>
+        <a href="#events" class="hero-btn">Explore Events</a>
+    </section>
+
+    <main>
+
+        <section id="events">
+            <h2>Upcoming Events</h2>
+
+            <div class="event-container">
+
+                <div class="event-card">
+                    <div class="event-date">15 DEC 2026</div>
+                    <h3>Annual Tech Fest</h3>
+                    <p class="venue">📍 Main Auditorium</p>
+                    <p>
+                        Explore technology, innovation, coding
+                        competitions and exciting projects.
+                    </p>
+                    <button onclick="selectEvent('Annual Tech Fest')">
+                        Register Now
+                    </button>
+                </div>
+
+                <div class="event-card">
+                    <div class="event-date">20 DEC 2026</div>
+                    <h3>Music Festival</h3>
+                    <p class="venue">📍 College Ground</p>
+                    <p>
+                        Enjoy live music, dance performances
+                        and amazing student talent.
+                    </p>
+                    <button onclick="selectEvent('Music Festival')">
+                        Register Now
+                    </button>
+                </div>
+
+                <div class="event-card">
+                    <div class="event-date">25 DEC 2026</div>
+                    <h3>Sports Championship</h3>
+                    <p class="venue">📍 Sports Complex</p>
+                    <p>
+                        Participate in exciting sports
+                        competitions and team activities.
+                    </p>
+                    <button onclick="selectEvent('Sports Championship')">
+                        Register Now
+                    </button>
+                </div>
+
+                <div class="event-card">
+                    <div class="event-date">05 JAN 2027</div>
+                    <h3>AI Workshop</h3>
+                    <p class="venue">📍 Seminar Hall</p>
+                    <p>
+                        Learn about Artificial Intelligence,
+                        Machine Learning and modern technologies.
+                    </p>
+                    <button onclick="selectEvent('AI Workshop')">
+                        Register Now
+                    </button>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="register">
+
+            <h2>Event Registration</h2>
+
+            <form id="registrationForm">
+
+                <label for="name">Full Name</label>
+                <input
+                    type="text"
+                    id="name"
+                    placeholder="Enter your name"
+                    required
+                >
+
+                <label for="email">Email Address</label>
+                <input
+                    type="email"
+                    id="email"
+                    placeholder="Enter your email"
+                    required
+                >
+
+                <label for="roll">College Roll Number</label>
+                <input
+                    type="text"
+                    id="roll"
+                    placeholder="Enter your roll number"
+                    required
+                >
+
+                <label for="event">Select Event</label>
+                <select id="event" required>
+                    <option value="">Choose an event</option>
+                    <option value="Annual Tech Fest">Annual Tech Fest</option>
+                    <option value="Music Festival">Music Festival</option>
+                    <option value="Sports Championship">Sports Championship</option>
+                    <option value="AI Workshop">AI Workshop</option>
+                </select>
+
+                <button type="submit">Submit Registration</button>
+
+            </form>
+
+            <div id="confirmation"></div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2026 Campus Events. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

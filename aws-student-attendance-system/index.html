@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Attendance System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Student Attendance System</h1>
+
+    <h2>Add Student</h2>
+
+    <form id="studentForm">
+        <input type="text" id="name" placeholder="Student Name" required>
+
+        <select id="department">
+            <option value="CSE">CSE</option>
+            <option value="AI/ML">AI/ML</option>
+            <option value="IT">IT</option>
+            <option value="ECE">ECE</option>
+        </select>
+
+        <button type="submit">Add Student</button>
+    </form>
+
+    <h2>Attendance</h2>
+
+    <label>Select Date:</label>
+    <input type="date" id="date">
+
+    <button onclick="loadAttendance()">View Attendance</button>
+
+    <div id="attendanceList"></div>
+
+    <p id="result"></p>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

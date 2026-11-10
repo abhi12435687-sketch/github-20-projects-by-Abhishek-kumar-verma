@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Student Management System</h1>
+
+    <div class="container">
+
+        <h2>Add Student</h2>
+
+        <form id="studentForm">
+
+            <input type="hidden" id="studentId">
+
+            <input type="text" id="name" placeholder="Student Name" required>
+
+            <input type="email" id="email" placeholder="Email" required>
+
+            <select id="department">
+                <option value="CSE">CSE</option>
+                <option value="AI/ML">AI/ML</option>
+                <option value="IT">IT</option>
+                <option value="ECE">ECE</option>
+            </select>
+
+            <select id="year">
+                <option value="1">1st Year</option>
+                <option value="2">2nd Year</option>
+                <option value="3">3rd Year</option>
+                <option value="4">4th Year</option>
+            </select>
+
+            <button type="submit" id="submitBtn">Add Student</button>
+
+        </form>
+
+        <h2>Student Records</h2>
+
+        <input type="text" id="search" placeholder="Search by ID or Name">
+
+        <button onclick="loadStudents()">Search</button>
+
+        <div id="message"></div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Department</th>
+                    <th>Year</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+
+            <tbody id="studentList"></tbody>
+        </table>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

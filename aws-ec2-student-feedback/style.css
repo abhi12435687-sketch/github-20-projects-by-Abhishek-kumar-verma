@@ -1,0 +1,25 @@
+
+body {
+    font-family: Arial;
+    margin: 30px;
+}
+
+h1 {
+    text-align: center;
+}
+
+form {
+    width: 300px;
+    margin: auto;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 8px;
+    margin: 8px 0;
+}
+
+button {
+    padding: 8px 20px;
+    margin-top: 10px;
+}

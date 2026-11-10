@@ -1,0 +1,147 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f1f5f9;
+    color: #333;
+}
+
+header {
+    background-color: #164e63;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+.container {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 20px;
+}
+
+section {
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px #ccc;
+}
+
+h2 {
+    color: #164e63;
+    margin-bottom: 20px;
+}
+
+input, select {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+button {
+    background-color: #0e7490;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #164e63;
+}
+
+.summary {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.summary .card {
+    background-color: #ecfeff;
+    padding: 20px;
+    flex: 1;
+    min-width: 180px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.card h3 {
+    color: #164e63;
+    margin-bottom: 15px;
+}
+
+.card p {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.expense-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f8fafc;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+    gap: 10px;
+}
+
+.expense-item h3 {
+    color: #164e63;
+    margin-bottom: 5px;
+}
+
+.expense-item p {
+    font-size: 14px;
+    color: #666;
+}
+
+.delete-btn {
+    background-color: #dc2626;
+    padding: 8px 12px;
+    margin: 0;
+}
+
+.delete-btn:hover {
+    background-color: #991b1b;
+}
+
+#message {
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+#remaining-budget {
+    color: green;
+}
+
+footer {
+    background-color: #164e63;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+@media (max-width: 600px) {
+    .summary {
+        flex-direction: column;
+    }
+
+    .expense-item {
+        flex-wrap: wrap;
+    }
+}

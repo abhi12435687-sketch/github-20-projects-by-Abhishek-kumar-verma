@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Online Examination System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Online Examination System</h1>
+
+    <div class="box" id="loginBox">
+        <h2>Student Login</h2>
+
+        <input type="email" id="email" placeholder="Email">
+        <input type="password" id="password" placeholder="Password">
+
+        <button onclick="login()">Login</button>
+        <button onclick="register()">Register</button>
+
+        <p id="message"></p>
+    </div>
+
+    <div class="box" id="examBox" style="display:none;">
+        <h2>Online Exam</h2>
+
+        <h3>Time Left: <span id="timer">05:00</span></h3>
+
+        <div id="questions"></div>
+
+        <button onclick="submitExam()">Submit Exam</button>
+    </div>
+
+    <div class="box" id="resultBox" style="display:none;">
+        <h2>Exam Result</h2>
+        <h3 id="result"></h3>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
